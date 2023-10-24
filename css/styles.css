@@ -1,0 +1,134 @@
+/* src/css/styles.css */
+
+@font-face {
+    font-family: 'Inconsolata'; /* Provide a name for your font */
+    src: url('Inconsolata-Regular.ttf') format('truetype'); /* Path to your TTF font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inconsolata'; /* Provide a name for your font */
+    src: url('Inconsolata-Bold.ttf') format('truetype'); /* Path to your TTF font file */
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Define custom colors */
+:root {
+    --background-color: #101010; /* Dark background color */
+    --secondary-background-color: #202020; /* Lighter background color */
+    --text-color: #f0f0f0; /* Light text color */
+    --link-color: #00bfff; /* Bold blue link color */
+    --accent-color: #ff6347; /* Bold red accent color */
+    --header-color: #ffa500; /* Bold orange header color */
+}
+
+/* Dark theme preference */
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #f6c2ed;
+        --secondary-background-color: #fda1e1;
+        --text-color: #111111;
+        --link-color: #044fcd;
+        --accent-color: #0a6e25;
+        --header-color: #ab0000;
+    }
+
+}
+
+/* Body Styles */
+body {
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 120%;
+}
+
+header {
+    text-align: center;
+    margin: 2em auto;
+    background: var(--background-color);
+}
+
+/* Header Styles */
+h1, h2, h3, h4, h5, h6 {
+    margin: 1em auto 0.5em auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--header-color);
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--header-color);
+}
+
+h3 {
+    font-size: 1.8em;
+    color: var(--header-color);
+}
+
+h4 {
+    font-size: 1.5em;
+    color: var(--header-color);
+}
+
+h5 {
+    font-size: 1.2em;
+    color: var(--header-color);
+}
+
+h6 {
+    font-size: 1em;
+    color: var(--header-color);
+}
+
+/* Link Styles */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Accent Styles */
+.important-text {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 3px var(--text-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Add footer styles */
+footer {
+    background-color: var(--secondary-background-color); /* Link color in the footer */
+    color: var(--text-color); /* Text color in the footer */
+    text-align: center;
+    margin-top: 4em;
+    padding: 1em 0;
+}
+
+/* Style links in the footer */
+footer a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
