@@ -16,8 +16,8 @@
 
 /* Define custom colors */
 :root {
-    --background-color: #101010; /* Dark background color */
-    --secondary-background-color: #202020; /* Lighter background color */
+    --background-color: #281717; /* Dark background color */
+    --secondary-background-color: #462e2e; /* Lighter background color */
     --text-color: #f0f0f0; /* Light text color */
     --link-color: #00bfff; /* Bold blue link color */
     --accent-color: #ff6347; /* Bold red accent color */
@@ -44,8 +44,15 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    font-size: 120%;
 }
+
+/* List Styles */
+ul {
+    margin: 1em 0;
+    padding: 0 0 0 1em;
+}
+
+/* Header Styles */
 
 header {
     text-align: center;
@@ -53,7 +60,6 @@ header {
     background: var(--background-color);
 }
 
-/* Header Styles */
 h1, h2, h3, h4, h5, h6 {
     margin: 1em auto 0.5em auto;
 }
@@ -105,12 +111,24 @@ a:hover {
 }
 
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+
+    margin: 1em auto;
+    padding: 1em;
     box-shadow: 0 0 3px var(--text-color);
     background-color: var(--background-color);
     color: var(--text-color);
+
+
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 120%;
+    }
+
+    main {
+        max-width: 800px;
+    }
 }
 
 /* Add footer styles */
@@ -132,3 +150,51 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Style other body elements */
+
+/* Styles for the table element */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    background-color: var(--background-color);
+}
+
+table, th, td {
+    border: 1px solid var(--text-color);
+}
+
+th, td {
+    padding: 0.7em;
+    text-align: left;
+}
+
+th {
+    background-color: var(--background-color);
+    color: var(--header-color);
+    font-size: 105%;
+}
+
+/* Reset paragraph styles */
+p {
+    margin: 1em 0;
+}
+
+/* Styles for the blockquote element */
+blockquote {
+    border-left: 4px solid var(--accent-color);
+    margin: 0.5em 0;
+    padding: 0.2rem 1em;
+}
+
+/* Styles for the custom footnote element */
+.footnote {
+    font-size: 80%;
+    color: var(--text-color);
+}
+
+.footnote::before {
+    content: "Note: ";
+    font-weight: bold;
+    color: var(--accent-color);
+}
