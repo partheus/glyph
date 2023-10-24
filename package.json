@@ -1,0 +1,24 @@
+{
+  "name": "glyph",
+  "version": "1.0.0",
+  "description": "simple domain",
+  "main": "/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/partheus/glyph.git"
+  },
+  "author": "Parth Shiralkar",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/partheus/glyph/issues"
+  },
+  "homepage": "https://github.com/partheus/glyph#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
