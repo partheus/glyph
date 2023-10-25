@@ -9,7 +9,7 @@
 
     <!-- Add other essential meta tags for SEO, like Open Graph and Twitter Card tags -->
 
-    <title>Add code styles</title>
+    <title>Github Pages pitfall</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -26,26 +26,14 @@
     </nav>
 
     <article>
-        <h2>Add code styles</h2>
+        <h2>Github Pages pitfall</h2>
 ---
 <div class="post-content">
-  <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;My Web Page&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Welcome to My Page&lt;/h1&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<pre><code class="language-js">console.log('hello world');
-</code></pre>
-<p><code>whatever the hell is up with cinnamon toast crunch</code></p>
-<pre><code class="language-css">body {
-  background-color: lightblue;
-}
-</code></pre>
+  <p>When you select a branch for your Github Pages build, just save a github actions file under <code>.github/workflows/</code> and push it to your repo. Github will automatically build your site and deploy it to the branch you selected.</p>
+<blockquote>
+<p>The important thing is to remember which branch is the build pulling from. It should always be <code>gh-pages</code></p>
+</blockquote>
+<p>I spent considerable time last night trying to figure out where the hell my build artefacts were going</p>
 
 </div>
 

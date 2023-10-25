@@ -5,6 +5,7 @@
     src: url('Inconsolata-Regular.ttf') format('truetype'); /* Path to your TTF font file */
     font-weight: normal;
     font-style: normal;
+    font-display: swap; /* Set font-display to 'swap' */
 }
 
 @font-face {
@@ -12,6 +13,7 @@
     src: url('Inconsolata-Bold.ttf') format('truetype'); /* Path to your TTF font file */
     font-weight: bold;
     font-style: normal;
+    font-display: swap; /* Set font-display to 'swap' */
 }
 
 /* Define custom colors */
@@ -43,6 +45,7 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
+    font-size: 1.35em;
 }
 
 /* List Styles */
@@ -60,7 +63,7 @@ header {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 1em auto 0.5em auto;
+    margin: 1em auto 0.25em auto;
 }
 
 h1 {
@@ -104,9 +107,10 @@ a:hover {
 }
 
 /* Accent Styles */
-.important-text {
+.subheadline {
     color: var(--accent-color);
     font-weight: bold;
+    margin-top: 0;
 }
 
 main {
@@ -122,10 +126,6 @@ main {
 /* Media Queries */
 
 @media (min-width: 768px) {
-    body {
-        font-size: 120%;
-    }
-
     main {
         max-width: 800px;
     }
@@ -143,7 +143,7 @@ footer {
 /* Style links in the footer */
 footer a {
     text-decoration: none;
-    color: var(--link-color);
+    color: var(--text-color);
 }
 
 footer a:hover {
@@ -177,13 +177,14 @@ th {
 
 /* Reset paragraph styles */
 p {
-    margin: 1em 0;
+    margin: 0.75em 0;
+    line-height: 1.1;
 }
 
 /* Styles for the blockquote element */
 blockquote {
     border-left: 4px solid var(--accent-color);
-    margin: 0.5em 0;
+    margin: 1.25em 0;
     padding: 0.2rem 1em;
 }
 
@@ -228,4 +229,22 @@ code {
     background-color: var(--secondary-background-color);
     border-radius: 5px;
     display: inline-block;
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 0.5em; /* Add spacing between list items */
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.post-content {
+    border-bottom: 1px solid var(--secondary-background-color);
+}
+
+main article ul li, main article ol li {
+    margin: 0.75em 0;
 }
