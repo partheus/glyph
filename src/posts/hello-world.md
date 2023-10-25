@@ -1,10 +1,10 @@
 ---
 layout: layouts/base
 title: Hello World
-date: 2023-10-23
+date: 2023-10-20
 ---
 
-## Welcome to my first post!
+## Hello World
 
 > The fun begins here.
 

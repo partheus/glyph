@@ -1,24 +1,26 @@
 ---
 layout: layouts/base
 title: Test Links
-date: 2023-10-23
+date: 2023-10-21
 ---
-# HTML Elements and FLOSS Resource Links
+## Test Links
+
+### HTML Elements and FLOSS Resource Links
 
 This Markdown document contains various HTML elements and provides links to Free and Open Source Software (FLOSS) resources.
 
-## Heading
+### Heading
 This is a sample heading.
 
-## Paragraph
+### Paragraph
 This is a sample paragraph with some text. You can add as much text as you like.
 
-## This is a footnote example
+### This is a footnote example
 This is a footnote example.[^1]
 
 [^1]: This is a footnote.
 
-## Lists
+### Lists
 
 ### Unordered List
 - Item 1
@@ -30,7 +32,7 @@ This is a footnote example.[^1]
 2. Second item
 3. Third item
 
-## Links
+### Links
 Here are some FLOSS resource links:
 
 - [GNU Project](https://www.gnu.org/)
@@ -39,10 +41,10 @@ Here are some FLOSS resource links:
 - [LibreOffice](https://www.libreoffice.org/)
 - [GIMP (GNU Image Manipulation Program)](https://www.gimp.org/)
 
-## Images
+### Images
 ![Open Source Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/500px-Tux.svg.png)
 
-## Tables
+### Tables
 
 | Name      | Role          |
 |-----------|---------------|
@@ -50,12 +52,12 @@ Here are some FLOSS resource links:
 | Richard   | Stallman      |
 | Mozilla   | Foundation    |
 
-## Blockquotes
+### Blockquotes
 > This is a sample blockquote.
 
-## Emphasis
+### Emphasis
 *This text is italic.*
 **This text is bold.**
 
-## Horizontal Rule
+### Horizontal Rule
 ---
