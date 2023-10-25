@@ -18,7 +18,7 @@ date: 2023-10-25
 console.log('hello world');
 ```
 
-`whatever the hell is up with cinnamon toast crunch`
+`whatever is up with cinnamon toast crunch`
 
 ```css
 body {
