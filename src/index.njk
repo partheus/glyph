@@ -7,7 +7,7 @@ templateEngineOverride: njk, md
 ## glyph
 
 <ul>
-    {% for post in collections.post %}<li>
+    {% for post in collections.post %}<li class="post-title">
             <a href="{{ post.url }}" title="go to post">{{ post.data.title }}</a><span> {{ post.data.date | date('YYYY-MM-DD') }}</span>
         </li>
     {% endfor %}
@@ -16,4 +16,4 @@ templateEngineOverride: njk, md
 
 
 
-> ### It’s still magic even if you know how it’s done.
+> It’s still magic even if you know how it’s done.
