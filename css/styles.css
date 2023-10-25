@@ -16,26 +16,25 @@
 
 /* Define custom colors */
 :root {
-    --background-color: #281717; /* Dark background color */
-    --secondary-background-color: #462e2e; /* Lighter background color */
-    --text-color: #f0f0f0; /* Light text color */
-    --link-color: #00bfff; /* Bold blue link color */
-    --accent-color: #ff6347; /* Bold red accent color */
-    --header-color: #ffa500; /* Bold orange header color */
+    --background-color: #110b0b; /* Dark background color */
+    --secondary-background-color: #281b1b; /* Lighter background color */
+    --text-color: #a4a0a0; /* Light text color */
+    --link-color: #06a3d7; /* Bold blue link color */
+    --accent-color: #b23923; /* Bold red accent color */
+    --header-color: #c27d03; /* Bold orange header color */
 }
 
 /* Dark theme preference */
-@media (prefers-color-scheme: light) {
-    :root {
-        --background-color: #f6c2ed;
-        --secondary-background-color: #fda1e1;
-        --text-color: #111111;
-        --link-color: #044fcd;
-        --accent-color: #0a6e25;
-        --header-color: #ab0000;
-    }
-
-}
+/*@media (prefers-color-scheme: light) {*/
+/*    :root {*/
+/*        --background-color: #f6c2ed;*/
+/*        --secondary-background-color: #fda1e1;*/
+/*        --text-color: #111111;*/
+/*        --link-color: #044fcd;*/
+/*        --accent-color: #0a6e25;*/
+/*        --header-color: #ab0000;*/
+/*    }*/
+/*}*/
 
 /* Body Styles */
 body {
@@ -111,15 +110,16 @@ a:hover {
 }
 
 main {
-
+    max-width: 100vw;
     margin: 1em auto;
     padding: 1em;
     box-shadow: 0 0 3px var(--text-color);
     background-color: var(--background-color);
     color: var(--text-color);
-
-
 }
+
+
+/* Media Queries */
 
 @media (min-width: 768px) {
     body {
