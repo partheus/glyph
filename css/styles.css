@@ -15,10 +15,10 @@
     :root {
         --background-color: #f6c2ed;
         --secondary-background-color: #fda1e1;
-        --text-color: #111111;
-        --link-color: #0742a8;
+        --text-color: #4f3c3c;
+        --link-color: #930654;
         --accent-color: #0a6e66;
-        --header-color: #ab0000;
+        --header-color: #0044ab;
     }
 }
 
