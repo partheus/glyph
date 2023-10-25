@@ -1,10 +1,7 @@
 ---
-layout: layouts/base
 title: Test Links
 date: 2023-10-21
 ---
-## Test Links
-
 ### HTML Elements and FLOSS Resource Links
 
 This Markdown document contains various HTML elements and provides links to Free and Open Source Software (FLOSS) resources.

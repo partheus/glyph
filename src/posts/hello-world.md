@@ -1,11 +1,7 @@
 ---
-layout: layouts/base
 title: Hello World
 date: 2023-10-20
 ---
-
-## Hello World
-
 > The fun begins here.
 
 # Heading 1

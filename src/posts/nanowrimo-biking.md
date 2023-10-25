@@ -2,9 +2,6 @@
 title: Biking in the rain
 date: 2023-10-23
 ---
-## Biking in the rain
-
-
 I love biking so much I'm going to create a tabular data visualizer for the main site at some point.
 
 George Benson's "Breezin'" is playing on my headphones, but not really, just inside my head, which is awesome.
