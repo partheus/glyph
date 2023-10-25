@@ -13,10 +13,10 @@
 /* Light theme preference*/
 @media (prefers-color-scheme: light) {
     :root {
-        --background-color: #f6c2ed;
-        --secondary-background-color: #fda1e1;
+        --background-color: #ffe2f6;
+        --secondary-background-color: #f8c1f1;
         --text-color: #4f3c3c;
-        --link-color: #930654;
+        --link-color: #af0064;
         --accent-color: #0a6e66;
         --header-color: #0044ab;
     }
@@ -244,4 +244,9 @@ img {
     height: auto;
     display: block;
     margin: 1em auto;
+}
+
+.ascii-garden {
+    white-space: pre;
+    font-family: monospace;
 }
