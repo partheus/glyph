@@ -13,10 +13,10 @@
 /* Light theme preference*/
 @media (prefers-color-scheme: light) {
     :root {
-        --background-color: #f6c2ed;
-        --secondary-background-color: #fda1e1;
+        --background-color: #ffe2f6;
+        --secondary-background-color: #f8c1f1;
         --text-color: #4f3c3c;
-        --link-color: #930654;
+        --link-color: #af0064;
         --accent-color: #0a6e66;
         --header-color: #0044ab;
     }
@@ -36,6 +36,15 @@ body {
 ul {
     margin: 1em 0;
     padding: 0 0 0 1em;
+}
+
+ol {
+    margin: 1em 0;
+    padding: 0 0 0 1em;
+}
+
+li {
+    margin: 0.5em 0;
 }
 
 /* Header Styles */
@@ -106,19 +115,6 @@ main {
     color: var(--text-color);
 }
 
-
-/* Media Queries */
-
-@media (min-width: 768px) {
-    main {
-        max-width: 800px;
-    }
-
-    body {
-        font-size: 1.35em;
-    }
-}
-
 /* Add footer styles */
 footer {
     background-color: var(--secondary-background-color); /* Link color in the footer */
@@ -165,8 +161,8 @@ th {
 
 /* Reset paragraph styles */
 p {
-    margin: 0.75em 0;
-    line-height: 1.3;
+    margin: 1em 0;
+    line-height: 1.3em;
 }
 
 /* Styles for the blockquote element */
@@ -209,8 +205,8 @@ pre code {
 }
 
 code {
-    padding: 6px;
-    line-height: 1.4;
+    padding: 5px;
+    line-height: 1.3em;
     color: var(--text-color);
     background-color: var(--secondary-background-color);
     border-radius: 5px;
@@ -231,7 +227,7 @@ nav ul {
     border-bottom: 1px solid var(--secondary-background-color);
 }
 
-main article ul li, main article ol li {
+.post-title {
     margin: 0.75em 0;
 }
 
@@ -244,4 +240,31 @@ img {
     height: auto;
     display: block;
     margin: 1em auto;
+}
+
+.ascii-garden {
+    white-space: pre;
+    font-family: monospace;
+}
+
+/* Styles for the markdown footnotes */
+.footnotes-list > li {
+    font-size: 0.85em;
+}
+
+.footnotes-list {
+    margin-left: 1.5em;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    main {
+        max-width: 800px;
+    }
+
+    body {
+        font-size: 1.25em;
+    }
 }
