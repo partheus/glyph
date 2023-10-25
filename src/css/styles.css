@@ -29,7 +29,7 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    font-size: 1.35em;
+    font-size: 1.15em;
 }
 
 /* List Styles */
@@ -112,6 +112,10 @@ main {
 @media (min-width: 768px) {
     main {
         max-width: 800px;
+    }
+
+    body {
+        font-size: 1.35em;
     }
 }
 
