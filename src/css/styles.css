@@ -241,6 +241,11 @@ nav ul {
     margin: 0.75em 0;
 }
 
+.post-description {
+    color: var(--accent-color);
+    margin: 0.5em 0;
+}
+
 main article ul li a, main article ol li a {
     font-size: 1.1em;
 }
