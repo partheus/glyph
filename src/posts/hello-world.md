@@ -1,8 +1,8 @@
 ---
 title: Hello World
 date: 2023-10-20
+description: The fun begins here.
 ---
-> The fun begins here.
 
 # Heading 1
 
