@@ -1,7 +1,7 @@
 ---
-layout: layouts/post
 title: "Upward spiral"
 date: 2023-10-26
+description: Fiction
 ---
 On Monday, in the middle of his conversation with the prime minister, Duke Harang blinked once very slowly and then died.
 
