@@ -1,5 +1,7 @@
 _site
 
+.idea
+
 # Logs
 logs
 *.log

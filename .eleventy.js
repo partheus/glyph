@@ -31,6 +31,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy("CNAME");
+    eleventyConfig.addPassthroughCopy("public.asc");
     eleventyConfig.addPassthroughCopy(".nojekyll");
     eleventyConfig.addPassthroughCopy("garden-social.webp");
 
