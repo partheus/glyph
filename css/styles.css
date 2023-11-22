@@ -4,7 +4,7 @@
 :root {
     --background-color: #110b0b; /* Dark background color */
     --secondary-background-color: #281b1b; /* Lighter background color */
-    --text-color: #a4a0a0; /* Light text color */
+    --text-color: #b9b3b3; /* Light text color */
     --link-color: #06a3d7; /* Bold blue link color */
     --accent-color: #b23923; /* Bold red accent color */
     --header-color: #c27d03; /* Bold orange header color */
@@ -134,7 +134,7 @@ footer {
     color: var(--text-color); /* Text color in the footer */
     text-align: center;
     margin-top: 2em;
-    padding: 1em 0;
+    padding: 0.1em 0;
     width: 100%;
 }
 
@@ -175,15 +175,19 @@ th {
 
 /* Reset paragraph styles */
 p {
-    margin: 1em 0;
-    line-height: 1.3em;
+    margin: 1.2em 0;
+    line-height: 1.5em;
 }
 
 /* Styles for the blockquote element */
 blockquote {
     border-left: 4px solid var(--accent-color);
     margin: 1.25em 0;
-    padding: 0.2rem 1em;
+    padding: 1px 1em;
+}
+
+blockquote p {
+    margin: 3px 0;
 }
 
 /* Styles for the custom footnote element */
@@ -283,6 +287,10 @@ img {
     padding: 0.4em 0.5em;
     border-radius: 5em;
     text-decoration: none;
+    margin-top: 0.5em;
+    position: fixed;
+    bottom: 1em;
+right: 1em;
 }
 
 
