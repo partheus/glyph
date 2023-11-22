@@ -4,21 +4,38 @@ const matter = require('gray-matter');
 const path = require('path');
 const app = express();
 
+// Sanitize the title
+function sanitizeTitle(title) {
+    return title
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, '-') // Replace non-alphanumeric characters with hyphens
+        .replace(/-+/g, '-') // Replace consecutive hyphens with a single hyphen
+        .replace(/^-|-$/g, ''); // Remove leading and trailing hyphens
+}
+
 // Serve static files from the "cms" directory
+app.use(express.json());
 app.use(express.static(path.join(__dirname, '.')));
 
-app.use(express.json());
-
 app.post('/create-post', (req, res) => {
-    const { title, description, date, content } = req.body;
+    let { title, description, date, content } = req.body;
+
+    // Check if the title is empty
+    if (!title) {
+        res.status(400).json({ message: 'Title is required' });
+        return;
+    }
+
+    // sanitize the title
+    title = sanitizeTitle(title);
 
     const data = {
         title,
         description,
-        date,
+        date
     };
 
-    const markdown = matter.stringify(content, data);
+    const markdown = matter.stringify(data, content);
 
     const postsDir = path.join(__dirname, '../src/posts');
 
