@@ -128,6 +128,10 @@ main {
     color: var(--text-color);
 }
 
+.max-width-container {
+    max-width: 40ch;
+}
+
 /* Add footer styles */
 footer {
     background-color: var(--secondary-background-color); /* Link color in the footer */
@@ -302,7 +306,7 @@ img {
     }
 
     body {
-        font-size: 1.25em;
+        font-size: 1.2em;
     }
 
     header {
