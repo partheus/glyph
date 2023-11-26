@@ -3,45 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A little subsite in the lower Discworld, a small personal blog of Parth Shiralkar">
     <meta name="keywords" content="Parth Shiralkar">
-    <meta name="author" content="Parth Shiralkar">
     <meta name="generator" content="Eleventy">
 
-    <meta name="title" content="glyph by parth shiralkar">
-    <meta name="description" content="A little subsite in the lower Discworld, a small personal blog of Parth Shiralkar">
+    <link rel="manifest" href="manifest.json">
 
-    <!-- Add other essential meta tags for SEO, like Open Graph and Twitter Card tags -->
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://glyph.parth.ninja/">
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="{{ metadata.siteDescription }}">
+    <meta name="author" content="{{ metadata.author.name }}">
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="glyph by parth shiralkar">
-    <meta property="og:description" content="A little subsite in the lower Discworld, a small personal blog of Parth Shiralkar">
-    <meta property="og:image" content="/garden-social.webp">
+    <meta property="og:title" content="{{ metadata.siteName }}">
+    <meta property="og:description" content="{{ metadata.siteDescription }}">
+    <meta property="og:url" content="{{ metadata.siteUrl }}">
+    <meta property="og:image" content="{{ metadata.siteImage }}">
+    <meta property="og:site_name" content="{{ metadata.siteName }}">
 
-    <!-- Twitter Meta Tags -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="glyph">
-    <meta name="twitter:description" content="A little subsite in the lower Discworld, a small personal blog of Parth Shiralkar">
-    <meta name="twitter:image" content="/garden-social.webp">
+    <meta name="twitter:creator" content="{{ metadata.socialLinks.personal }}">
+    <meta name="twitter:title" content="{{ metadata.siteName }}">
+    <meta name="twitter:description" content="{{ metadata.siteDescription }}">
+    <meta name="twitter:image" content="{{ metadata.siteImage }}">
+
+    <!-- Canonical URL for SEO -->
+    <link rel="canonical" href="{{ metadata.siteUrl }}">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "{{ metadata.siteName }}",
+            "url": "{{ metadata.siteUrl }}",
+            "logo": "{{ metadata.siteLogo }}",
+            "description": "{{ metadata.siteDescription }}",
+            "sameAs": [
+                "{{ metadata.socialLinks.personal }}",
+                "{{ metadata.socialLinks.github }}"
+            ]
+        }
+    </script>
 
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+<nav>
+    <ul>
+        <li><a href="/" title="Home">home</a></li>
+        <li><a href="/colophon" title="Colophon">/colophon</a></li>
+        <li><a href="/meta" title="meta">/meta</a></li>
+    </ul>
+</nav>
 <header>
-    <h1><a href="/" title="Home">temporal harmony garden</a></h1>
+    <h1 class="headline"><a href="/" title="Home">temporal harmony garden</a></h1>
     <h2 class="subheadline">a simple domain</h2>
 </header>
 <main>
-    <nav>
-        <ul>
-            <li><a href="/" title="Home">home</a></li>
-            <li><a href="/colophon" title="Colophon">/colophon</a></li>
-            <li><a href="/meta" title="meta">/meta</a></li>
-        </ul>
-    </nav>
-
     <article>
         {{ content | safe }}
     </article>
