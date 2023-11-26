@@ -1,0 +1,9 @@
+{
+    "name": "glyph by parth shiralkar",
+    "short_name": "glyph",
+    "description": "a little subsite in the lower Discworld, a small personal blog of parth shiralkar",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#281b1b",
+    "theme_color": "#110b0b"
+}
