@@ -1,0 +1,17 @@
+{
+  "siteName": "glyph by parth shiralkar",
+  "siteShortName": "glyph",
+  "siteDescription": "a little subsite in the lower Discworld, a small personal blog of parth shiralkar",
+  "siteUrl": "https://glyph.parth.ninja",
+  "siteLogo": "/favicon.ico",
+  "siteImage": "/garden-social.webp",
+  "author": {
+    "name": "parth shiralkar",
+    "email": "hi@parth.ninja"
+  },
+  "socialLinks": {
+    "personal": "https://parth.ninja",
+    "github": "https://github.com/partheus"
+  },
+  "footerText": "© parth shiralkar"
+}
