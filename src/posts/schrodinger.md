@@ -15,16 +15,8 @@ Is it, then, possible to alter the states in which we exist, simply by altering 
 
 The crossroads I find myself at is neither a problematic one nor a particularly pleasant one. It is just that, a crossroads.
 
-Take, for example, the very fact that I'm writing about it. There is a physical, real-world manifestation of my _act of observing my own circumstance_. Is this proof that something will change? Or is it just another failed/successful experiment in the back room of a mad scientist's laboratory?
+Take, for example, the very fact that I'm writing about it. There is a physical, real-world manifestation of my _act of observing my own circumstance_. Is this proof that something will change? Or is it just another failed/successful experiment in the back room of a mad scientist's laboratory? I dunno.
 
-I am not sure.
-
-Philosophers (Socrates) have said that the unexamined life isn't worth living. I don't entirely disagree, but the pressure to perceive oneself is kinda onerous. But that's fine too.
-
-If the cat were to choose to observe itself, would it be able to change its state? Or would it just be a cat, observing itself, detached from the decision-making process entirely?
-
-Can the cat take control of its fate? Technically speaking, it can. Once the observer has opened the box, the cat has already chosen. But what if the cat were to observe itself before the box is opened? Would it be able to change its state?
-
-Happy Diwali, by the way.
+Philosophers (Socrates) have said that the unexamined life isn't worth living. Sure, but the pressure to perceive oneself is sort of onerous. But that's fine.
 
 
