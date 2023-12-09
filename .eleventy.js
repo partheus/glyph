@@ -34,7 +34,7 @@ module.exports = function (eleventyConfig) {
         const year = page.date ? page.date.getFullYear() : new Date().getFullYear();
         const fileSlug = page.fileSlug || '';
 
-        return `/${year}/posts/${fileSlug}/`;
+        return `/posts/${year}/${fileSlug}/`;
     });
 
     eleventyConfig.addPassthroughCopy("src/css");
