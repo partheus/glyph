@@ -1,9 +1,12 @@
 ---
-layout: layouts/post
+layout: layouts/base
 title:  'glyph'
 description: a list of all posts on the site
 date: 2023-10-23
 templateEngineOverride: njk, md
+---
+<h2 class="post-content__title">{{ title | safe }}</h2>
+<p class="post-description">{{ description | safe }}</p>
 ---
 <ul>
     {% for post in collections.post %}<li class="post-title">
