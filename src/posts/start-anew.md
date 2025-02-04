@@ -1,6 +1,6 @@
 ---
 title: Start anew
-date: 2024-01-29
+date: 2025-01-29
 ---
 I'm in a new place with fresh herbs, bygone regrets, and bit of table salt. I'm in a new place and it feels slightly odd to be here. What is it that drives me to write again, I don't know that. I do think it's time that I do things again, put myself in a situation, place myself at ease somehow.
 
