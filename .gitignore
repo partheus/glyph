@@ -1,5 +1,10 @@
 _site
 
+# TinaCMS
+.tina
+__generated__
+admin/
+
 .idea
 
 # Logs
