@@ -45,6 +45,11 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("garden-social.webp");
     eleventyConfig.addPassthroughCopy({"favicon.ico": "/favicon.ico"});
 
+    // Pass through the admin files from TinaCMS
+    eleventyConfig.addPassthroughCopy({
+        "admin": "_site/admin"
+    });
+
     return {
         dir: {
             input: "src",
